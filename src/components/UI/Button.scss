@@ -1,0 +1,22 @@
+.button {
+    background: #fff;
+    padding: .125rem;
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+
+    &__green {
+        color: green;
+    }
+
+    &__red {
+        color: red;
+    }
+
+    &__blue {
+        color: blue
+    }
+}

@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { BsArrowRepeat } from "react-icons/bs";
+import "./App.scss";
+import CardList from "./components/CardList";
+import Form from "./components/Form";
+import Button from "./components/UI/Button";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="title">
+        <h1>Notes</h1>
+        <Button classMod="button__green">
+          <BsArrowRepeat />
+        </Button>
+      </div>
+
+      <CardList />
+      <Form />
     </div>
   );
 }
