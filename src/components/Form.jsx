@@ -17,6 +17,12 @@ function Form({ addPost }) {
       );
       // ToDo Сделать очистку формы - сделал
       textAreaRef.current.value = "";
+    } else {
+      textAreaRef.current.classList.add("textarea__not-text");
+      textAreaRef.current.focus();
+      setTimeout(() => {
+        textAreaRef.current.classList.remove("textarea__not-text");
+      }, 1000);
     }
   };
 

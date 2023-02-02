@@ -17,4 +17,24 @@
     padding: 0.5rem;
     resize: none;
     height: 5rem;
+    background: white;
+    transition: 3s;
+
+    &__not-text {
+        animation: 1s not-text;
+    }
+}
+
+@keyframes not-text {
+    0% {
+        background: inherit;
+    }
+
+    50% {
+        background: rgba(255, 0, 0, .5);
+    }
+
+    100% {
+        background: inherit;
+    }
 }
