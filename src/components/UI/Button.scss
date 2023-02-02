@@ -25,6 +25,13 @@
             animation: 1s infinite rotate;
         }
     }
+
+    &_error {
+        >svg {
+            color: red;
+        }
+    }
+
 }
 
 @keyframes rotate {
