@@ -3,16 +3,17 @@ import "./Card.scss";
 import { BsX } from "react-icons/bs";
 import Button from "./UI/Button";
 
-function Card() {
+function Card({ post, handlePostClick }) {
   return (
     <div className="card">
-      <p className="card__text">
-        Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-        work correctly both with client-side routing and a non-root public URL.
-        Learn how to configure a non-root public URL by running `npm run build`.
-      </p>
+      <span className="card__id">id:{post.id} </span>
+      <p className="card__text">{post.content}</p>
       <Button classMod={"button__red"}>
-        <BsX />
+        <BsX
+          onClick={() => {
+            handlePostClick(post.id);
+          }}
+        />
       </Button>
     </div>
   );

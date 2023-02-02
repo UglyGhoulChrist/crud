@@ -10,4 +10,16 @@
         top: 0;
         transform: translate(50%, -50%);
     }
+
+    &__id {
+        opacity: .5;
+    }
+
+    &__text {
+        display: inline-block;
+
+        ::first-letter {
+            text-transform: uppercase;
+        }
+    }
 }

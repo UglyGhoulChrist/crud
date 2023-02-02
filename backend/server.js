@@ -9,8 +9,14 @@ const app = new Koa();
 app.use(cors());
 app.use(koaBody({json: true}));
 
-const notes = [];
-let nextId = 1;
+const notes = [{
+    "id": 1,
+    "content": "First Note"
+},{
+    "id": 2,
+    "content": "Second Note"
+}];
+let nextId = 3;
 
 const router = new Router();
 
